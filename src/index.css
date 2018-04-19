@@ -1,0 +1,11 @@
+html,
+body,
+#map,
+#root {
+  height: 100%;
+  width: 100vw;
+}
+
+label, hr {
+  margin: 0;
+}

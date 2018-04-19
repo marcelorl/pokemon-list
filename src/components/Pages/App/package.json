@@ -1,0 +1,5 @@
+{
+  "name": "App Container",
+  "main": "./App.Container",
+  "private": true
+}
