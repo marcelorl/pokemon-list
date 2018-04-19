@@ -7,6 +7,7 @@
     "bootstrap": "^4.0.0",
     "gh-pages": "^1.1.0",
     "history": "^4.7.2",
+    "lodash.get": "^4.4.2",
     "react": "^16.3.1",
     "react-app-rewired": "^1.5.0",
     "react-dom": "^16.3.1",
@@ -39,9 +40,13 @@
     "prestart": "yarn",
     "start": "react-app-rewired start",
     "build": "react-scripts build",
+    "test": "jest --env=jsdom",
+    "test:ci": "jest --env=jsdom --ci",
+    "coverage": "npm test -- --coverage",
     "lint": "standard \"src/**/*.js\" --fix --verbose | snazzy",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "cosmos": "cosmos"
   },
   "jest": {
     "collectCoverageFrom": [

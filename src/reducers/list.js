@@ -1,43 +1,45 @@
+import get from 'lodash.get';
+
 import {
-  ADD_QUESTION,
-  REMOVE_QUESTIONS,
-  SORT_QUESTIONS
-} from '../actions/question'
+  LIST_FAIL_FETCH,
+  LIST_REQUEST_FETCH,
+  LIST_SUCCESS_FETCH
+} from '../actions/list';
 
-const initialState = []
+const INITIAL_STATE = {
+  loading: false,
+  list: {
+    count: 0,
+    next: null,
+    previous: '',
+    results: []
+  },
+  error: ''
+};
 
-const layersReducer = (state = initialState, action) => {
+const listReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case ADD_QUESTION: {
-      const nQuestions = Array.from(state)
-
-      nQuestions.push(action.question)
-
-      return nQuestions
-    }
-
-    case REMOVE_QUESTIONS: {
-      return []
-    }
-
-    case SORT_QUESTIONS: {
-      const nQuestions = Array.from(state)
-
-      return nQuestions.sort((a, b) => {
-        if (a.question > b.question) {
-          return 1
-        }
-        if (a.question < b.question) {
-          return -1
-        }
-
-        return 0
-      })
-    }
-
+    case LIST_FAIL_FETCH:
+      return Object.assign({}, state, {
+        error: `Error - ${action.err}`,
+        loading: false,
+        list: []
+      });
+    case LIST_REQUEST_FETCH:
+      return Object.assign({}, state, {
+        error: '',
+        loading: true,
+        list: []
+      });
+    case LIST_SUCCESS_FETCH:
+      return Object.assign({}, state, {
+        error: '',
+        loading: false,
+        list: get(action, 'list.data', INITIAL_STATE.list)
+      });
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default layersReducer
+export default listReducer;

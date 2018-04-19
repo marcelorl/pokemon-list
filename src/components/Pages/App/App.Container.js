@@ -12,7 +12,7 @@ class AppContainer extends Component {
 
   render () {
     return (
-      <App {...props} />
+      <App {...this.props} />
     )
   }
 }

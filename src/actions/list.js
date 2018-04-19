@@ -28,7 +28,7 @@ export const fetchList = injection => {
 
   return dispatch => {
     dispatch(requestList());
-    return axios.get('/list')
+    return axios.get('')
       .then(list => dispatch(requestListSuccess(list)))
       .catch(err => dispatch(requestListFail(err)));
   };

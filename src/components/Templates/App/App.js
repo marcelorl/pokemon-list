@@ -1,17 +1,20 @@
 import React, { Component } from 'react'
 import {
   Container,
-  Row
+  Navbar,
+  NavbarBrand
 } from 'reactstrap'
 
 class App extends Component {
   render () {
-    return (
+    return ([
+      <Navbar color="dark" dark expand="xs">
+        <NavbarBrand href="/">POKEMON</NavbarBrand>
+      </Navbar>,
       <Container>
-        <Row className='mt-3 mb-3'>
-        </Row>
+        asdf
       </Container>
-    )
+    ])
   }
 }
 
