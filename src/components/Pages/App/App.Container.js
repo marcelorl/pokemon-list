@@ -7,7 +7,7 @@ import App from '../../Templates/App'
 
 class AppContainer extends Component {
   componentDidMount () {
-    this.props.fetchList()
+    this.props.fetchPokemons()
   }
 
   render () {
