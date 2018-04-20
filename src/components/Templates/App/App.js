@@ -8,8 +8,8 @@ import {
 class App extends Component {
   render () {
     return ([
-      <Navbar color="dark" dark expand="xs">
-        <NavbarBrand href="/">POKEMON</NavbarBrand>
+      <Navbar color='dark' dark expand='xs'>
+        <NavbarBrand href='/'>POKEMON</NavbarBrand>
       </Navbar>,
       <Container>
         asdf

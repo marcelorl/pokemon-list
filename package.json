@@ -54,7 +54,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run lint",
+      "standard --fix --verbose | snazzy",
       "git add"
     ]
   },

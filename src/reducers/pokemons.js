@@ -1,10 +1,10 @@
-import { handleActions } from 'redux-actions';
+import { handleActions } from 'redux-actions'
 
 import {
   requestPokemons,
   requestPokemonsFail,
   requestPokemonsSuccess
-} from '../actions/pokemons';
+} from '../actions/pokemons'
 
 const INITIAL_STATE = {
   loading: false,
@@ -15,24 +15,24 @@ const INITIAL_STATE = {
     results: []
   },
   error: ''
-};
+}
 
 const reducer = handleActions({
   [requestPokemons]: (state, action) => ({
     error: '',
     loading: true,
-    list: [],
+    list: []
   }),
   [requestPokemonsFail]: (state, action) => ({
     error: `Error - ${action.err}`,
     loading: false,
-    list: [],
+    list: []
   }),
   [requestPokemonsSuccess]: (state, action) => ({
     error: '',
     loading: false,
-    list: action.payload,
-  }),
-}, INITIAL_STATE);
+    list: action.payload
+  })
+}, INITIAL_STATE)
 
-export default reducer;
+export default reducer
