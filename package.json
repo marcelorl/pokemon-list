@@ -27,8 +27,10 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
+    "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jest-enzyme": "^6.0.0",
+    "lint-staged": "^7.0.4",
     "react-cosmos": "^3.6.1",
     "react-cosmos-redux-proxy": "^3.6.1",
     "react-cosmos-router-proxy": "^3.6.1",
@@ -47,7 +49,14 @@
     "lint": "standard \"src/**/*.js\" --fix --verbose | snazzy",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "cosmos": "cosmos"
+    "cosmos": "cosmos",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "git add"
+    ]
   },
   "jest": {
     "collectCoverageFrom": [
