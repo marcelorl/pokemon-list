@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import { fetchList } from '../../../actions/list'
+import { fetchPokemons } from '../../../actions/pokemons'
 import App from '../../Templates/App'
 
 class AppContainer extends Component {
@@ -23,7 +23,7 @@ const mapStateToProps = state =>
   }))
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-  fetchList
+  fetchPokemons
 }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(AppContainer)

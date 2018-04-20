@@ -3,12 +3,12 @@ import thunkMiddleware from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { createLogger } from 'redux-logger'
 
-import listReducer from './list'
+import pokemonsReducer from './pokemons'
 
 const loggerMiddleware = createLogger()
 
 const reducers = combineReducers({
-  list: listReducer
+  pokemons: pokemonsReducer
 })
 
 const middlewares = applyMiddleware(
