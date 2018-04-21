@@ -19,7 +19,7 @@ class HomeContainer extends Component {
 
 const mapStateToProps = state =>
   (Object.assign({}, {
-    pokemons: state.question
+    pokemons: state.pokemons
   }))
 
 const mapDispatchToProps = dispatch => bindActionCreators({

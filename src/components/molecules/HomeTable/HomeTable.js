@@ -1,24 +1,24 @@
 import React from 'react'
 
 import {
-  // Card,
+  Card,
   // CardImg,
-  // CardTitle,
+  CardTitle,
   Row
 } from 'reactstrap'
 
-const HomeTable = ({ pokemons }) =>
-  <Row />
+const HomeTable = props =>
+  <Row>
+    {props.pokemons.list.results.map((pokemon, index) => {
+      return (
+        <Card key={index}>
+          {/* <CardImg /> */}
+          <CardTitle>
+            {pokemon.name}
+          </CardTitle>
+        </Card>
+      )
+    })}
+  </Row>
 
 export default HomeTable
-
-// {pokemons.map((pokemon) => {
-//   return (
-//     <Card>
-//       {/*<CardImg />*/}
-//       <CardTitle>
-//
-//       </CardTitle>
-//     </Card>
-//   )
-// })}
