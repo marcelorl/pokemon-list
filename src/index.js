@@ -2,16 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import App from './components/Pages/App'
+import { makeMainRoutes } from './routes'
+import store from './reducers'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 
-import store from './reducers'
+const routes = makeMainRoutes()
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    {routes}
   </Provider>,
   document.getElementById('root')
 )

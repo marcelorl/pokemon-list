@@ -1,0 +1,5 @@
+{
+  "name": "Home Container",
+  "main": "./Home.Container",
+  "private": true
+}
