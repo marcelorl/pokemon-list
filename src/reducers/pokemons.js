@@ -7,7 +7,7 @@ import {
 } from '../actions/pokemons'
 
 const INITIAL_STATE = {
-  loading: false,
+  loading: true,
   list: {
     count: 0,
     next: null,
@@ -21,12 +21,12 @@ const reducer = handleActions({
   [requestPokemons]: (state, action) => ({
     error: '',
     loading: true,
-    list: []
+    list: {}
   }),
   [requestPokemonsFail]: (state, action) => ({
     error: `Error - ${action.err}`,
     loading: false,
-    list: []
+    list: {}
   }),
   [requestPokemonsSuccess]: (state, action) => ({
     error: '',
