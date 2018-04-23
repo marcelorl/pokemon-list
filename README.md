@@ -10,6 +10,7 @@
   - Pokemon API
   - Jest
   - React-cosmos
+  - Localforage (in order to avoid requesting the same urls and cache their response)
 
 ### Installation + Start
 
