@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#TableItem renders component -> withImage 1`] = `
+<TableItem
+  image="1.png"
+  name="With image"
+>
+  <Col
+    className="my-3"
+    md="3"
+    sm="4"
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+    xs="6"
+  >
+    <div
+      className="my-3 col-6 col-sm-4 col-md-3"
+    >
+      <Card
+        tag="div"
+      >
+        <div
+          className="card"
+        >
+          <CardImg
+            alt="pokemon"
+            src="1.png"
+            tag="img"
+            top={true}
+            width="100%"
+          >
+            <img
+              alt="pokemon"
+              className="card-img-top"
+              src="1.png"
+              width="100%"
+            />
+          </CardImg>
+          <CardTitle
+            className="text-center"
+            tag="h5"
+          >
+            <h5
+              className="text-center card-title"
+            >
+              With image
+            </h5>
+          </CardTitle>
+        </div>
+      </Card>
+    </div>
+  </Col>
+</TableItem>
+`;
