@@ -11,6 +11,8 @@
   - Jest
   - React-cosmos
   - Localforage (in order to avoid requesting the same urls and cache their response)
+  - Travis CI
+  - gh-pages
 
 ### Installation + Start
 
