@@ -1,5 +1,8 @@
 import { createAction } from 'redux-actions'
 
+import {
+  fetchDetails
+} from './details'
 import axios from '../services/Request'
 
 const dependencies = { axios }
@@ -14,7 +17,13 @@ export const fetchPokemons = injection => {
   return dispatch => {
     dispatch(requestPokemons())
     return axios.get('')
-      .then(({ data }) => dispatch(requestPokemonsSuccess(data)))
+      .then(async ({ data }) => {
+        data.results.forEach(({ name, url }) =>
+          dispatch(fetchDetails(name, url))
+        )
+
+        await dispatch(requestPokemonsSuccess(data))
+      })
       .catch(({ data }) => dispatch(requestPokemonsFail(data)))
   }
 }
