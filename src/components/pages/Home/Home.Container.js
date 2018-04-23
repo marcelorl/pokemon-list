@@ -19,6 +19,7 @@ class HomeContainer extends Component {
 
 const mapStateToProps = state =>
   (Object.assign({}, {
+    details: state.details,
     pokemons: state.pokemons
   }))
 

@@ -1,12 +1,12 @@
 import React from 'react'
 
-import HomeTable from '../../molecules/HomeTable'
+import Table from '../../organisms/Table'
 
-const Home = ({ pokemons }) => {
+const Home = ({ details, pokemons }) => {
   if (pokemons.loading) return null
 
   return (
-    <HomeTable pokemons={pokemons} />
+    <Table pokemons={pokemons.list.results} details={details} />
   )
 }
 
