@@ -11,18 +11,19 @@ export const requestPokemonsFail = createAction('POKEMONS_FAIL_FETCH')
 export const requestPokemons = createAction('POKEMONS_REQUEST_FETCH')
 export const requestPokemonsSuccess = createAction('POKEMONS_SUCCESS_FETCH')
 
-export const fetchPokemons = injection => {
+export const fetchPokemons = (url = '', injection) => {
   const { axios } = Object.assign({}, dependencies, injection)
 
   return dispatch => {
     dispatch(requestPokemons())
-    return axios.get('')
-      .then(async ({ data }) => {
+    console.log('CARALHO', url, axios)
+    return axios.get(url)
+      .then(({ data }) => {
         data.results.forEach(({ name, url }) =>
           dispatch(fetchDetails(name, url))
         )
 
-        await dispatch(requestPokemonsSuccess(data))
+        dispatch(requestPokemonsSuccess(data))
       })
       .catch(({ data }) => dispatch(requestPokemonsFail(data)))
   }

@@ -2,11 +2,11 @@ import React from 'react'
 
 import Table from '../../organisms/Table'
 
-const Home = ({ details, pokemons }) => {
+const Home = ({ details, fetchPokemons, pokemons }) => {
   if (pokemons.loading) return null
 
   return (
-    <Table pokemons={pokemons.list.results} details={details} />
+    <Table details={details} fetchPokemons={fetchPokemons} pokemons={pokemons.list} />
   )
 }
 

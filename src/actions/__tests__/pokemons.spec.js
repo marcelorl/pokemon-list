@@ -56,6 +56,7 @@ describe('#pokemons', () => {
         get: jest
           .fn()
           .mockImplementationOnce(() => Promise.reject(error))
+          .mockImplementationOnce(() => Promise.reject(error))
       }
 
       it('should fetchPokemons fail', async () => {
@@ -64,10 +65,16 @@ describe('#pokemons', () => {
           { type: 'POKEMONS_FAIL_FETCH' }
         ]
 
-        await store.dispatch(fetchPokemons({ axios }))
+        await store.dispatch(fetchPokemons('', { axios }))
 
         expect(store.getActions()).toEqual(expectedActions)
         expect(axios.get).toBeCalledWith('')
+      })
+
+      it('should fetchPokemons fail with url', async () => {
+        await store.dispatch(fetchPokemons('test', { axios }))
+
+        expect(axios.get).toBeCalledWith('test')
       })
     })
   })
