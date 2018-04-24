@@ -30,7 +30,7 @@ class Table extends Component {
     return ([
       <Row key='table'>
         {list.map((pokemon, index) => {
-          const image = get(details, `list[${pokemon.name}].front_default`, '')
+          const image = get(details, `list[${pokemon.name}].images.front_default`, '')
 
           return (
             <TableItem

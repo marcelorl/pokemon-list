@@ -18,7 +18,15 @@ const reducer = handleActions({
     loading: false
   }),
   [requestDetailsSuccess]: (state, action) => {
-    const list = Object.assign({}, state.list, { [action.payload.name]: action.payload.data.sprites })
+    const { abilities, sprites, stats, types } = action.payload.data
+
+    const details = {
+      abilities: abilities.map(item => item.ability.name),
+      images: sprites,
+      stats: stats.map(item => ({ name: item.stat.name, value: item.base_stat })),
+      types: types.map(item => item.type.name)
+    }
+    const list = Object.assign({}, state.list, { [action.payload.name]: details })
 
     return {
       error: '',
