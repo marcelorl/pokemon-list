@@ -15,6 +15,10 @@ script:
   - npm test
   - npm run lint
 
-after_success:
-  - npm run build
-  - npm run deploy
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: master
