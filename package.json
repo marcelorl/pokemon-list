@@ -1,6 +1,6 @@
 {
   "name": "pokemon-list",
-  "homepage": "https://marcelorl.github.io/pokemon-list",
+  "homepage": "https://marcelorl.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,6 +43,7 @@
     "react-cosmos-router-proxy": "^3.6.1",
     "react-cosmos-test": "^3.6.1",
     "react-test-renderer": "^16.3.2",
+    "server": "^1.0.18",
     "snazzy": "^7.1.1",
     "standard": "^11.0.1"
   },
@@ -51,7 +52,6 @@
     "start": "react-app-rewired start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:ci": "react-scripts test --env=jsdom --ci",
     "coverage": "npm test -- --coverage",
     "lint": "standard \"src/**/*.js\" --fix --verbose | snazzy",
     "predeploy": "npm run build",
