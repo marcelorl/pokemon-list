@@ -7,6 +7,7 @@ import {
 
 import Slider from '../../molecules/Slider'
 import Stats from '../../molecules/Stats'
+import TableInfo from '../../molecules/TableInfo'
 
 class Pokemon extends Component {
   createImagesCollection (detail) {
@@ -30,7 +31,6 @@ class Pokemon extends Component {
     const detail = get(details, `list.${param}`, {})
 
     const images = this.createImagesCollection(detail)
-    const stats = get(detail, 'stats', [])
 
     return ([
       <h2 key='title' className='text-capitalize my-3'>{param}</h2>,
@@ -41,7 +41,15 @@ class Pokemon extends Component {
           />
         </Col>
         <Col xs='12' sm='6' md='7' lg='9'>
-          <Stats items={stats} />
+          <Stats items={detail.stats} />
+        </Col>
+      </Row>,
+      <Row key='details-2'>
+        <Col xs='12' md='6'>
+          <TableInfo items={detail.abilities} title='Abilities' />
+        </Col>
+        <Col xs='12' md='6'>
+          <TableInfo items={detail.types} title='Types' />
         </Col>
       </Row>
     ])
