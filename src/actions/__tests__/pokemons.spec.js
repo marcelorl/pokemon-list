@@ -1,4 +1,4 @@
-import configureMockStore from '../../services/ConfigureMockStore/configureMockStore'
+import configureMockStore from '../../services/ConfigureMockStore'
 import {
   requestPokemons,
   requestPokemonsFail,
