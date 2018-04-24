@@ -19,6 +19,7 @@ export const makeMainRoutes = () =>
     <ConnectedRouter history={history}>
       <div>
         <AppRoute exact path='/' component={Home} />
+        <AppRoute exact path='/pokemon/:pokemon' component={Home} />
       </div>
     </ConnectedRouter>
   </HashRouter>

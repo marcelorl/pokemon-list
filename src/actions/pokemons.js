@@ -16,7 +16,6 @@ export const fetchPokemons = (url = '', injection) => {
 
   return dispatch => {
     dispatch(requestPokemons())
-    console.log('CARALHO', url, axios)
     return axios.get(url)
       .then(({ data }) => {
         data.results.forEach(({ name, url }) =>
