@@ -1,0 +1,5 @@
+{
+  "name": "Pokemon Container",
+  "main": "./Pokemon.Container",
+  "private": true
+}
