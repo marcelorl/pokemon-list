@@ -10,7 +10,7 @@
   - Pokemon API
   - Jest + React-cosmos
   - TravisCI + gh-pages
-  - Localforage (in order to avoid requesting the same urls and cache their response)
+  - Localforage (in order to avoid requesting the same urls and cache their response locally)
 
 ### Installation + Start
 
@@ -33,4 +33,4 @@ $ npm run build
 ```
  
  If all these steps get completed, the built files will be sent to `gh-pages` branch and presented in
- `https://marcelorl.github.io/pokemon-list/`
+ `https://marcelorl.github.io/pokemon-list/` [BROKEN]
