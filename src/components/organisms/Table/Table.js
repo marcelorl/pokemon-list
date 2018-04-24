@@ -16,7 +16,7 @@ class Table extends Component {
   }
 
   prev () {
-    this.props.fetchPokemons(this.props.pokemons.prev)
+    this.props.fetchPokemons(this.props.pokemons.previous)
   }
 
   next () {
