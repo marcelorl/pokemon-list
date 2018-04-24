@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import get from 'lodash.get'
 import {
-  Col
+  Col,
+  Row
 } from 'reactstrap'
 
 import Slider from '../../molecules/Slider'
+import Stats from '../../molecules/Stats'
 
 class Pokemon extends Component {
-  createImagesCollection () {
-    const { details, param } = this.props
-
+  createImagesCollection (detail) {
     return (
       Object
-        .values(get(details, `list.${param}.images`, []))
+        .values(get(detail, `images`, []))
         .filter(item => item !== '')
         .map(src => ({
           src,
@@ -26,15 +26,23 @@ class Pokemon extends Component {
 
     if (details.loading) return null
 
-    const images = this.createImagesCollection(details)
+    const detail = get(details, `list.${param}`, {})
+
+    const images = this.createImagesCollection(detail)
+    const stats = get(detail, 'stats', [])
 
     return ([
       <h2 key='title' className='text-capitalize'>{param}</h2>,
-      <Col key='slider' xs='12' lg='3'>
-        <Slider
-          items={images}
-        />
-      </Col>
+      <Row key='details-1'>
+        <Col xs='12' md='5' lg='3'>
+          <Slider
+            items={images}
+          />
+        </Col>
+        <Col xs='12' md='7' lg='9'>
+          <Stats items={stats} />
+        </Col>
+      </Row>
     ])
   }
 }

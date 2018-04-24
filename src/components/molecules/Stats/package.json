@@ -1,0 +1,5 @@
+{
+  "name": "Stats",
+  "main": "./Stats",
+  "private": true
+}
