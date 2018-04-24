@@ -32,8 +32,8 @@ class Pokemon extends Component {
     const stats = get(detail, 'stats', [])
 
     return ([
-      <h2 key='title' className='text-capitalize'>{param}</h2>,
-      <Row key='details-1'>
+      <h2 key='title' className='text-capitalize my-3'>{param}</h2>,
+      <Row key='details-1' className='mb-3'>
         <Col xs='12' md='5' lg='3'>
           <Slider
             items={images}
