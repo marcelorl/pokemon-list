@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 import { ConnectedRouter } from 'react-router-redux'
 import createHistory from 'history/createBrowserHistory'
 
@@ -15,8 +15,10 @@ const AppRoute = ({ component: Component, ...rest }) =>
   )} />
 
 export const makeMainRoutes = () =>
-  <ConnectedRouter history={history}>
-    <div>
-      <AppRoute exact path='/' component={Home} />
-    </div>
-  </ConnectedRouter>
+  <HashRouter>
+    <ConnectedRouter history={history}>
+      <div>
+        <AppRoute exact path='/' component={Home} />
+      </div>
+    </ConnectedRouter>
+  </HashRouter>
