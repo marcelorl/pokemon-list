@@ -5,6 +5,8 @@ export default {
   component: TableItem,
   props: {
     image,
-    name: 'With image'
-  }
+    name: 'pikachu'
+  },
+  url: '/charizard',
+  route: '/:pokemon'
 }

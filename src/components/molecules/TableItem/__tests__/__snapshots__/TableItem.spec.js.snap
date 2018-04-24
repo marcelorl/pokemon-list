@@ -3,7 +3,7 @@
 exports[`#TableItem renders component -> withImage 1`] = `
 <TableItem
   image="1.png"
-  name="With image"
+  name="pikachu"
 >
   <Col
     className="my-3"
@@ -30,20 +30,30 @@ exports[`#TableItem renders component -> withImage 1`] = `
         <div
           className="card"
         >
-          <CardImg
-            alt="pokemon"
-            src="1.png"
-            tag="img"
-            top={true}
-            width="100%"
+          <Link
+            replace={false}
+            to="/pikachu"
           >
-            <img
-              alt="pokemon"
-              className="card-img-top"
-              src="1.png"
-              width="100%"
-            />
-          </CardImg>
+            <a
+              href="/pikachu"
+              onClick={[Function]}
+            >
+              <CardImg
+                alt="pokemon"
+                src="1.png"
+                tag="img"
+                top={true}
+                width="100%"
+              >
+                <img
+                  alt="pokemon"
+                  className="card-img-top"
+                  src="1.png"
+                  width="100%"
+                />
+              </CardImg>
+            </a>
+          </Link>
           <CardTitle
             className="text-center"
             tag="h5"
@@ -51,7 +61,17 @@ exports[`#TableItem renders component -> withImage 1`] = `
             <h5
               className="text-center card-title"
             >
-              With image
+              <Link
+                replace={false}
+                to="/pikachu"
+              >
+                <a
+                  href="/pikachu"
+                  onClick={[Function]}
+                >
+                  pikachu
+                </a>
+              </Link>
             </h5>
           </CardTitle>
         </div>

@@ -13,7 +13,8 @@ class Pokemon extends Component {
     return (
       Object
         .values(get(detail, `images`, []))
-        .filter(item => item !== '')
+        .filter(item => item !== null)
+        .reverse()
         .map(src => ({
           src,
           altText: ''
@@ -34,12 +35,12 @@ class Pokemon extends Component {
     return ([
       <h2 key='title' className='text-capitalize my-3'>{param}</h2>,
       <Row key='details-1' className='mb-3'>
-        <Col xs='12' md='5' lg='3'>
+        <Col xs='12' sm='6' md='5' lg='3'>
           <Slider
             items={images}
           />
         </Col>
-        <Col xs='12' md='7' lg='9'>
+        <Col xs='12' sm='6' md='7' lg='9'>
           <Stats items={stats} />
         </Col>
       </Row>
