@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import {
   Card,
   CardImg,
@@ -18,9 +19,13 @@ const renderImage = image => {
 const TableItem = ({ image, name }) =>
   <Col md='3' sm='4' xs='6' className='my-3'>
     <Card>
-      {renderImage(image)}
+      <Link to={`/${name}`}>
+        {renderImage(image)}
+      </Link>
       <CardTitle className='text-center'>
-        {name}
+        <Link to={`/${name}`}>
+          {name}
+        </Link>
       </CardTitle>
     </Card>
   </Col>
