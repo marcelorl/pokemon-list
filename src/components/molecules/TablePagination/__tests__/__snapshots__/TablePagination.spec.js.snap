@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#TablePagination renders component 1`] = `
+<TablePagination
+  next={[Function]}
+  prev={[Function]}
+>
+  <Pagination
+    size="lg"
+    tag="ul"
+  >
+    <ul
+      className="pagination pagination-lg"
+    >
+      <PaginationItem
+        tag="li"
+      >
+        <li
+          className="page-item"
+        >
+          <PaginationLink
+            onClick={[Function]}
+            previous={true}
+            tag="a"
+          >
+            <a
+              aria-label="Previous"
+              className="page-link"
+              onClick={[Function]}
+            >
+              <span
+                aria-hidden="true"
+                key="caret"
+              >
+                «
+              </span>
+              <span
+                className="sr-only"
+                key="sr"
+              >
+                Previous
+              </span>
+            </a>
+          </PaginationLink>
+        </li>
+      </PaginationItem>
+      <PaginationItem
+        tag="li"
+      >
+        <li
+          className="page-item"
+        >
+          <PaginationLink
+            next={true}
+            onClick={[Function]}
+            tag="a"
+          >
+            <a
+              aria-label="Next"
+              className="page-link"
+              onClick={[Function]}
+            >
+              <span
+                aria-hidden="true"
+                key="caret"
+              >
+                »
+              </span>
+              <span
+                className="sr-only"
+                key="sr"
+              >
+                Next
+              </span>
+            </a>
+          </PaginationLink>
+        </li>
+      </PaginationItem>
+    </ul>
+  </Pagination>
+</TablePagination>
+`;
