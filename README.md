@@ -12,9 +12,11 @@
   - TravisCI + gh-pages
   - Localforage (in order to avoid requesting the same urls and cache their response locally)
 
-### Installation + Start
+### Installation
 
-You should run only one command after cloning this repo:
+```$ yarn```
+
+### Usage
 
 ```$ npm start```
 
