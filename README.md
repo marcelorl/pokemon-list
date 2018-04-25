@@ -1,5 +1,7 @@
 # Pokemon List
 
+[![Build Status](https://travis-ci.org/marcelorl/pokemon-list.svg?branch=master)](https://travis-ci.org/marcelorl/pokemon-list)
+
 ### Tools
 
   - React 16
