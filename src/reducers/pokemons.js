@@ -6,7 +6,7 @@ import {
   requestPokemonsSuccess
 } from '../actions/pokemons'
 
-const INITIAL_STATE = {
+export const INITIAL_STATE = {
   loading: true,
   list: {
     count: 0,
@@ -24,7 +24,7 @@ const reducer = handleActions({
     list: {}
   }),
   [requestPokemonsFail]: (state, action) => ({
-    error: `Error - ${action.err}`,
+    error: `Error - ${action.payload}`,
     loading: false,
     list: {}
   }),

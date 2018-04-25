@@ -37,4 +37,4 @@ $ npm run build
 ```
  
  If all these steps get completed, the built files will be sent to `gh-pages` branch and presented in
- `https://marcelorl.github.io/pokemon-list/` [BROKEN]
+ `https://xp-pokemon.herokuapp.com/` [BROKEN]

@@ -6,7 +6,7 @@ import {
   requestDetailsSuccess
 } from '../actions/details'
 
-const INITIAL_STATE = {}
+export const INITIAL_STATE = {}
 
 const reducer = handleActions({
   [requestDetails]: (state, action) => ({
@@ -14,7 +14,7 @@ const reducer = handleActions({
     loading: true
   }),
   [requestDetailsFail]: (state, action) => ({
-    error: `Error - ${action.err}`,
+    error: `Error - ${action.payload}`,
     loading: false
   }),
   [requestDetailsSuccess]: (state, action) => {
