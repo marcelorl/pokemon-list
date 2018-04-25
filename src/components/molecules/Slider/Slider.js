@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {
   Carousel,
@@ -81,6 +82,14 @@ class Slider extends Component {
       </CarouselContainer>
     )
   }
+}
+
+Slider.defaultProps = {
+  items: []
+}
+
+Slider.propTypes = {
+  items: PropTypes.array.isRequired
 }
 
 export default Slider

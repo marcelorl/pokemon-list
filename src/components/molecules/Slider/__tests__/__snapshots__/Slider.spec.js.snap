@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Slider renders component 1`] = `
+<Slider
+  items={Array []}
+>
+  <Styled(Carousel)
+    activeIndex={0}
+    next={[Function]}
+    previous={[Function]}
+  >
+    <Carousel
+      activeIndex={0}
+      className="sc-bdVaJa hBBCaD"
+      interval={5000}
+      keyboard={true}
+      next={[Function]}
+      pause="hover"
+      previous={[Function]}
+      slide={true}
+    >
+      <div
+        className="sc-bdVaJa hBBCaD carousel slide"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <CarouselIndicators
+          activeIndex={0}
+          items={Array []}
+          onClickHandler={[Function]}
+        >
+          <ol
+            className="carousel-indicators"
+          />
+        </CarouselIndicators>
+        <div
+          className="carousel-inner"
+          role="listbox"
+        />
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={[Function]}
+        >
+          <a
+            className="carousel-control-prev"
+            onClick={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            <span
+              aria-hidden="true"
+              className="carousel-control-prev-icon"
+            />
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </a>
+        </CarouselControl>
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={[Function]}
+        >
+          <a
+            className="carousel-control-next"
+            onClick={[Function]}
+            role="button"
+            tabIndex="0"
+          >
+            <span
+              aria-hidden="true"
+              className="carousel-control-next-icon"
+            />
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </CarouselControl>
+      </div>
+    </Carousel>
+  </Styled(Carousel)>
+</Slider>
+`;
