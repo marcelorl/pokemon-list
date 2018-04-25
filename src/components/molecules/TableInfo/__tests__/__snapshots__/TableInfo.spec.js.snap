@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#TableInfo renders component 1`] = `
+<TableInfo
+  items={
+    Array [
+      1,
+      2,
+      3,
+    ]
+  }
+  title="Title"
+>
+  <Table
+    responsiveTag="div"
+    tag="table"
+  >
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Title
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          key="0"
+        >
+          <td>
+            1
+          </td>
+        </tr>
+        <tr
+          key="1"
+        >
+          <td>
+            2
+          </td>
+        </tr>
+        <tr
+          key="2"
+        >
+          <td>
+            3
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </Table>
+</TableInfo>
+`;

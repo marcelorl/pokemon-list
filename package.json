@@ -48,6 +48,7 @@
     "standard": "^11.0.1"
   },
   "scripts": {
+    "prestart": "yarn",
     "start": "react-app-rewired start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
