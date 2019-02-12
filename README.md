@@ -1,6 +1,6 @@
 # Pokemon List
 
-[![Build Status](https://travis-ci.org/marcelorl/pokemon-list.svg?branch=master)](https://travis-ci.org/marcelorl/pokemon-list)
+[![Build Status](https://travis-ci.org/marcelorl/pokemon-list.svg?branch=master)](https://travis-ci.org/marcelorl/pokemon-list) [![Greenkeeper badge](https://badges.greenkeeper.io/marcelorl/pokemon-list.svg)](https://greenkeeper.io/)
 
 ### Tools
 
