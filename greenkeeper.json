@@ -1,0 +1,25 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "src/components/molecules/Slider/package.json",
+        "src/components/molecules/Stats/package.json",
+        "src/components/molecules/TableInfo/package.json",
+        "src/components/molecules/TableItem/package.json",
+        "src/components/molecules/TablePagination/package.json",
+        "src/components/organisms/Table/package.json",
+        "src/components/pages/App/package.json",
+        "src/components/pages/Home/package.json",
+        "src/components/pages/Pokemon/package.json",
+        "src/components/templates/App/package.json",
+        "src/components/templates/Home/package.json",
+        "src/components/templates/Pokemon/package.json",
+        "src/reducers/package.json",
+        "src/services/ConfigureMockStore/package.json",
+        "src/services/History/package.json",
+        "src/services/Request/package.json"
+      ]
+    }
+  }
+}
