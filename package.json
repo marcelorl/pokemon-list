@@ -41,7 +41,7 @@
     "react-cosmos": "^4.8.1",
     "react-cosmos-redux-proxy": "^4.8.2",
     "react-cosmos-router-proxy": "^4.8.2",
-    "react-cosmos-test": "^4.7.0",
+    "react-cosmos-test": "^4.8.2",
     "react-test-renderer": "^16.3.2",
     "server": "^1.0.18",
     "snazzy": "^8.0.0",
