@@ -1562,19 +1562,13 @@ aws4@^1.2.1, aws4@^1.6.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.7.0.tgz#d4d0e9b9dbfca77bf08eeb0a8a471550fe39e289"
 
-axios-cache-adapter@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/axios-cache-adapter/-/axios-cache-adapter-2.0.0.tgz#1cdfb42c0262269acce73f971972615653877c43"
+axios-cache-adapter@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/axios-cache-adapter/-/axios-cache-adapter-2.3.2.tgz#c86ffc44f37f34de5fe4c45a8f99f95447d3af8b"
+  integrity sha512-//I5iTc4FjG3/+QtoExz7v1We3BfQ8itY8o+fmEDoi46oUZdfoDpI5tFk0RKqsQrUOsqLSOd1zvZ/3tXGoq6KQ==
   dependencies:
-    axios "^0.16.2"
-    lodash "^4.17.4"
-
-axios@^0.16.2:
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.16.2.tgz#ba4f92f17167dfbab40983785454b9ac149c3c6d"
-  dependencies:
-    follow-redirects "^1.2.3"
-    is-buffer "^1.1.5"
+    axios "^0.18.0"
+    lodash "^4.17.11"
 
 axios@^0.18.0:
   version "0.18.0"
@@ -4741,7 +4735,7 @@ follow-redirects@^1.0.0:
   dependencies:
     debug "=3.1.0"
 
-follow-redirects@^1.2.3, follow-redirects@^1.3.0:
+follow-redirects@^1.3.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.4.1.tgz#d8120f4518190f55aac65bb6fc7b85fcd666d6aa"
   dependencies:
