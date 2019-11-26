@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "axios-cache-adapter": "^2.0.0",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.4.0",
     "gh-pages": "^2.0.1",
     "history": "^4.7.2",
     "localforage": "^1.7.1",
